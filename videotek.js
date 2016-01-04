@@ -15,7 +15,7 @@ app.get('/scrape',function(req,res){
 	request(DEFAULT_URL,function(err,response,html){
 		if(!err){
 			var $ = cheerio.load(html);
-			$()
+			
 		}else
 			throw err;
 	})
